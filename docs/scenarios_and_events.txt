@@ -1,0 +1,10 @@
+How do you play?
+
+1) Scenarios - you get a situation and make a choice and the outcome affects your stats and such.
+ -- Debates
+Example:
+You're a reporter and find bad news about your party.  If you lie, you lose followers, but keep integrity and get more stories in the future...
+
+2) Events - Events you control, they cost money, turns, etc, you define how you want them to be set up and then your skills define how effective.  They are minigames.
+
+

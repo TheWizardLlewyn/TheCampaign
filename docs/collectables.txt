@@ -1,0 +1,12 @@
+Collectable element:
+
+Vehicle -
+	- Tour Bus
+	+ Addons
+	
+Personal Items:
+	- Clothing (Suit, Tie, bling bling)
+	- Spy Glasses
+	- Smart Watch
+	
+	

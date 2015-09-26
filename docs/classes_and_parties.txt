@@ -1,0 +1,15 @@
+Classes:
+* Politician
+* TV Personality 
+* Campaign Manager
+* Reporter (you can report how you wish)
+* Lobbyist
+* Thug 
+
+Political Parties:
+* Cumquats
+* Cupcakes
+* Cookies
+* Goobers
+
+What do they stand for?

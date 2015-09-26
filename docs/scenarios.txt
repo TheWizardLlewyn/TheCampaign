@@ -1,0 +1,15 @@
+Scenarios!
+Classes - Job:
+* Politician
+	- Grand Opening - a new store is opening up.  Big-box retailer is opening a new store, do you show up to the store, boycott the opening, or ignore it...
+	
+* TV Personality 
+
+* Campaign Manager
+
+* Reporter (you can report how you wish)
+
+* Lobbyist
+
+* Thug 
+	

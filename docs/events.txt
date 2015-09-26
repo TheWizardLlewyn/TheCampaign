@@ -1,0 +1,14 @@
+Scenarios!
+Classes - Job:
+* Politician
+	- 
+* TV Personality 
+
+* Campaign Manager
+
+* Reporter (you can report how you wish)
+
+* Lobbyist
+
+* Thug 
+

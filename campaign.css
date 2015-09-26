@@ -1,0 +1,37 @@
+#gameboard {
+    width: 85%;
+    max-width: 720px;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+}
+
+#left_side {
+    float: left;
+    width: 46%;
+}
+
+#right_side {
+    float: right;
+    width: 46%;
+}
+
+.signup_input {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    font-size: 28px;
+    margin-bottom: 8px;
+    padding: 3px;
+    width: 95%;
+}
+
+button {
+    margin: 4px;
+    font-size: 28px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.6);
+    background-color: rgba(120, 255, 64,1);
+}

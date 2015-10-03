@@ -1,9 +1,32 @@
 Character Creation:
-1) Tell us about "yourself" (your character)
-Name, Basic Description, Age (Real for COPA requirements; character age).
-2) Pick a party: Cumquats, Cupcakes, Cookies, Goobers
-3) "Personality Test" - Answer these as your character would:
-Answers define class: Politician, TV Personality, Campaign Manager, Reporter (you can report how you wish), Lobbyist, Thug 
+Step 1)
+* Display Character Name
+* Pick a party
+Kumquats, Cupcakes, Cookies, Goobers
+
+Step 2) The Personality Test - 16 points
+Strength
+Stealth
+Creativity
+Investigation
+Charm
+Fundraising
+Intimidation
+Manipulation
+
+(to determine your skills/Job)
+
+Step 3) Job Selection
+
+Politician
+TV Personality
+Campaign Manager
+Reporter
+Thug
+
+Step 4) Tutorial Mode (your first scenario)
+
+Answers define class: Politician, TV Personality, Campaign Manager, Reporter (you can report how you wish), Lobbyist, Thug
 
 Tutorial Mode:
 Your first scenario - with "assistance" explaining what each action will do.

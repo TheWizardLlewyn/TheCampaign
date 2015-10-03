@@ -7,7 +7,7 @@ Classes:
 * Thug 
 
 Political Parties:
-* Cumquats
+* kumquats
 * Cupcakes
 * Cookies
 * Goobers

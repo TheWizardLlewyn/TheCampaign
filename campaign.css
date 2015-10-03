@@ -35,3 +35,82 @@ button {
     border: 1px solid rgba(0,0,0,.6);
     background-color: rgba(120, 255, 64,1);
 }
+
+.parties_container {
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.6);
+    border-radius: 4px;
+}
+.party {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    display: block;
+    float: left;
+    height: 180px;
+    margin: 3px;
+    padding: 3px;
+    width: 23%;
+}
+
+.party.selected, .signup_job.selected {
+    background-color: rgba(0, 0, 180, .6);
+}
+
+#party_selection_confirmation, #signup_stat_continue, #job_selection_continue {
+    float: right;
+}
+
+.signup_stat {
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.6);
+    height: 24px;
+}
+.signup_stat_name {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.signup_stat_value {
+    float: right;
+    width: 80px;
+}
+
+.signup_stat_value_controls {
+    float: right;
+    width: 42px;
+}
+
+.signup_stat_value_display {
+    float: left;
+    width: 24px;
+    text-align: right;
+}
+.signup_stat_value_increase, .signup_stat_value_decrease {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    float: left;
+    font-size: 21px;
+    height: 18px;
+    line-height: 17px;
+    margin-top: 1px;
+    text-align: center;
+    width: 18px;
+}
+
+.signup_job {
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.6);
+    margin-bottom: 6px;
+}
+
+.signup_job_name {
+    float: left;
+    width: 140px;
+    font-weight: bold;
+    font-style: italic;
+    width: 25%;
+}
+.signup_job_description {
+    float: right;
+    width: 73%;
+}

@@ -43,7 +43,8 @@ class DatabaseUtil {
     		    foreach ($item as $key=>$val) {
     		    	$ret_item[$key]=$val;
     		    }
-    		    $return[] = $ret_item;
+                $return[] = $ret_item;
+    		    //$return[] = $item;
 			}
 		}
 		return $return;

@@ -13,7 +13,7 @@ include("includes.php");
     <body>
         <div id="gameboard">
             <div id="game_heading">Welcome to The Campaign</div>
-            <div id="left_side">
+            <div id="left_side_half">
                 <h2>Create New Account</h2>
                 <input id="signup_email" type="text" placeholder="Email" class="signup_input"/>
                 <input id="signup_name" type="text" placeholder="Character Name" class="signup_input"/>
@@ -22,13 +22,23 @@ include("includes.php");
                 <button id="create_account_button">Create Account</button>
 
             </div>
-            <div id="right_side">
+            <div id="right_side_half">
                 <h2>Sign In</h2>
 
             </div>
+            <div style="clear:both;"></div>
 
             <div id="full_width"></div>
             <div style="clear:both;"></div>
+
+            <div id="left_side_small" style="display:none;">
+
+            </div>
+            <div id="right_side_large" style="display:none;">
+
+            </div>
+            <div style="clear:both;"></div>
+
         </div>
     </body>
 </html>

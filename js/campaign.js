@@ -27,8 +27,8 @@ function nextSignupStep() {
     switch(signup_step) {
         case 1:
             //Party Selection
-            $("#left_side").hide();
-            $("#right_side").hide();
+            $("#left_side_half").hide();
+            $("#right_side_half").hide();
             $("#full_width").show();
             $.ajax({
                 url: "docs/party_description.html",
@@ -115,11 +115,48 @@ function nextSignupStep() {
                     $(".signup_job").removeClass("selected");
                     $(this).addClass("selected");
                 });
+                $("#job_selection_continue").click(function() {
+                    if ($(".signup_job.selected").length != 1) {
+                        alert("You must select a single job");
+                    } else {
+                        signup_values.job_id = $(".signup_job.selected").data("job_id");
+                        nextSignupStep();
+                    }
+                });
             });
 
             break;
         case 4:
+            //save character information
+            $.ajax({
+                url: "api/finalize_user_information.php",
+                type: "post",
+                data: signup_values
+            }).done(function(response) {
+                if (response != "") {
+                    alert(response);
+                }
+            });
+
             //Tutorial - Your First scenario
+            $("#full_width").html("");
+            $("#full_width").hide();
+            $("#left_side_small").show();
+            $("#right_side_large").show();
+            $.ajax({
+                url: "docs/scenario_help.html",
+                type: "post"
+            }).done(function(response) {
+                $("#left_side_small").html(response);
+            });
+
+            $.ajax({
+                url: "api/get_scenario.php",
+                type: "post"
+            }).done(function(response) {
+                $("#right_side_large").html(response);
+            });
+
 
             break;
     }

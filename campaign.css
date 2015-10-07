@@ -8,14 +8,24 @@
     padding: 12px;
 }
 
-#left_side {
+#left_side_half {
     float: left;
     width: 46%;
 }
 
-#right_side {
+#right_side_half {
     float: right;
     width: 46%;
+}
+
+#left_side_small {
+    float: left;
+    width: 20%;
+}
+
+#right_side_small {
+    float: right;
+    width: 76%;
 }
 
 .signup_input {

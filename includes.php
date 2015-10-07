@@ -12,6 +12,7 @@ if (isset($_SESSION['user'])) {
     $user = &$_SESSION['user'];
 }
 include("config/server_config.php");
+include("config/reference_vars.php");
 include("utilities/DatabaseUtil.php");
 $db = new DatabaseUtil();
 

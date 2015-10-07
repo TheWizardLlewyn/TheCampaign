@@ -14,8 +14,8 @@ class User {
     var $fundraising = 0;
     var $intimidation = 0;
     var $manipulation = 0;
-    var $job = "";
-    var $party = "";
+    var $job_id;
+    var $party_id;
     var $name = "";
     var $email = "";
     var $user_id;
@@ -37,7 +37,7 @@ class User {
         $this->manipulation = $user_info['manipulation'];
         $this->email = $user_info['email'];
         $this->name = $user_info['name'];
-        $this->party = $user_info['party_id'];
+        $this->party_id = $user_info['party_id'];
         //TODO: Load job
         //TODO: LOAD PARTY
         //TODO: Load Personal Items
@@ -83,6 +83,42 @@ class User {
         return new User($user_id);
 
     }
+
+    /**
+     * @param $party_id INT Party ID
+     */
+    public function setParty($party_id) {
+        global $db;
+        $this->party_id = $party_id;
+        $db->query("UPDATE users SET party_id = {$this->party_id} WHERE user_id = {$this->user_id}");
+    }
+
+    /**
+     * @param $job_id INT Job ID
+     */
+    public function setJob($job_id) {
+        global $db;
+        $this->job_id = $job_id;
+        $db->query("UPDATE users SET job_id = {$this->job_id} WHERE user_id = {$this->user_id}");
+    }
+
+    /**
+     * @param $stats_array ARRAY Key value of stat=>value
+     */
+    public function updateStats($stats_array) {
+    global $db;
+    $values = array();
+    foreach ($stats_array as $key=>$val) {
+        if (is_numeric($val)) {
+            $values[] = "$key = $val";
+        }
+    }
+
+    if (count($values) > 0) {
+        $db->query("UPDATE users SET " . implode(",", $values) . " WHERE user_id = {$this->user_id}");
+    }
+}
+
 }
 
 ?>

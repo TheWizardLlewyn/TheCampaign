@@ -47,3 +47,9 @@ CREATE TABLE `the_campaign`.`scenario_options` (
 `scenario_option_result` TEXT NOT NULL ,
 INDEX ( `scenario_id` )
 ) ENGINE = MYISAM ;
+
+CREATE TABLE `the_campaign`.`scenario_descriptions` (
+`scenario_description_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`severity_scale` TINYINT NOT NULL ,
+`scenario_description` VARCHAR( 512 ) NOT NULL
+) ENGINE = MYISAM ;
